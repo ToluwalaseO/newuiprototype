@@ -1,0 +1,24 @@
+/* header2.css */
+
+.header {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px; /* Add some padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+    position: relative; /* Position the element */
+    right:200px;
+
+  }
+  
+  .header h1 {
+    font-size: 2em; /* Larger font size for the main heading */
+    color: #0575e5; /* Darker color for the main heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .header p {
+    font-size: 1em; /* Standard font size for paragraphs */
+    color: #0085fa; /* Gray color for the text */
+    margin: 5px 0; /* Space above and below paragraphs */
+  }

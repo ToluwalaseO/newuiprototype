@@ -1,5 +1,12 @@
+/* App.css */
+
 .App {
   text-align: center;
+  width: 100%; /* Set the width to 100% of the parent container */
+  max-width: 8000px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding for better spacing */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .App-logo {

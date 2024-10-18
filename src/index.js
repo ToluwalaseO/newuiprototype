@@ -1,27 +1,14 @@
-import React from 'react';
-import Sidebar from './Sidebar'; // Adjust path if needed
-import './mainpage.css'; // Ensure there's no conflicting styles
-import CampaignReach from './CampaignReach';
-import InfluencersSection from './Influencers';
-import Dashboard from './Dashboard';
-import Header from './Header1'; // Use the correct header component
-import Header2 from './Header2'; // Include if needed
-import RadarChartComponent from './radarchart'; // Include if needed
-import AgeGenderChart from './genderchart'; // Include if needed
+import React from 'react'; // Correct import for React
+import ReactDOM from 'react-dom/client'; // Ensure correct import for ReactDOM
+import App from './App';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
 
-function App() {
-  return (
-    <div className="App">
-      <Header /> {/* Adding Header component */}
-      <Header2 /> 
-      <Sidebar />
-      <Dashboard />
-      <InfluencersSection />
-      <CampaignReach />
-      <RadarChartComponent /> {/* Adding Radar Chart Component if needed */}
-      <AgeGenderChart /> {/* Adding Age Gender Chart Component if needed */}
-    </div>
-  );
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App /> {/* Removed the semicolon */}
+  </React.StrictMode>
+);
 
-export default App;
+reportWebVitals();
