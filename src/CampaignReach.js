@@ -5,8 +5,10 @@ const CampaignReach = () => {
     return (
         <div className="campaign-reach">
             <div className="map">
-                {/* Placeholder for map */}
-                <div className="map-placeholder">Map Goes Here</div>
+            <div className="map-placeholder">
+    <img src="/image.png" alt="Map" style={{ width: '50%', height: 'auto' }} />
+</div>
+
                 <div className="info">
                     <div className="info-box">
                         <span className="country">Canada</span>

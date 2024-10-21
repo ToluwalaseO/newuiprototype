@@ -1,0 +1,11 @@
+.radar-chart-container {
+    margin-left: 200px; /* Use margin to position the chart */
+    width: 500px; /* Set the width of the radar chart container */
+    height: 400px; /* Set the height of the radar chart container */
+}
+
+.radar-chart-header {
+    text-align: left; /* Align the header text to the left */
+    font-size: 24px; /* Font size for the header */
+    margin-bottom: 20px; /* Space between header and chart */
+}

@@ -1,53 +1,44 @@
 import React from 'react';
+import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
-import  'chart.js/auto'; 
+import './RadarChart.css'; // Import the CSS file
 
-const RadarChartComponent = () => {
+ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
+
+const FollowerInterestChart = () => {
     const data = {
-        labels: ['Technology', 'Cars', 'Memes', 'Watches', 'Others'],
+        labels: ['Interest 1', 'Interest 2', 'Interest 3', 'Interest 4', 'Interest 5'],
         datasets: [
             {
-                label: 'TikTok',
-                data: [80, 60, 95, 50, 70],
-                backgroundColor: 'rgba(255, 205, 86, 0.2)',
-                borderColor: 'rgba(255, 205, 86, 1)',
-                borderWidth: 2
-            },
-            {
-                label: 'Twitter',
-                data: [70, 55, 75, 65, 40],
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 2
-            },
-            {
-                label: 'Facebook',
-                data: [60, 85, 50, 75, 80],
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 2
+                label: 'Followers',
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgba(255, 99, 132, 1)',
+                borderWidth: 2,
+                data: [20, 30, 40, 50, 60], // Sample data values
             }
         ]
     };
 
     const options = {
+        responsive: true,
         scale: {
-            ticks: { beginAtZero: true }
+            ticks: {
+                beginAtZero: true,
+            }
         },
         plugins: {
             legend: {
-                display: true,
                 position: 'top',
             }
-        }
+        },
     };
 
     return (
-        <div style={{ width: '700px', height: '500px' }}>
-            <h2>Social Media Comparison</h2>
+        <div className="radar-chart-container">
+            <h2 className="radar-chart-header">Follower Interest</h2>
             <Radar data={data} options={options} />
         </div>
     );
 };
 
-export default RadarChartComponent;
+export default FollowerInterestChart;
