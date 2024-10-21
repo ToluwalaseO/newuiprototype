@@ -1,33 +1,73 @@
 /* header2.css */
 
-.header {
-    background-color: #ffffff; /* Light background color */
+.header2 {
+    background-color: #f8f9fa; /* Light background color */
     padding: 20px; /* Add some padding */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgb(255, 255, 255); /* Subtle shadow for depth */
+    radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center-align text */
-    position: relative; /* Position the element */
-    right:200px;
-    color: white;
-    top:-800px;
-    flex-wrap: 20px;
-    width: 800px;
-    left: 300px;
-
-
-
-
   }
   
-  .header h1 {
+  .header2-title {
     font-size: 2em; /* Larger font size for the main heading */
-    color: #0575e5; /* Darker color for the main heading */
+    color: #000000; /* Darker color for the main heading */
     margin-bottom: 10px; /* Space below the heading */
+    bottom: 700px;
+    right: 800px;
+    position: relative;
   }
   
-  .header p {
-    font-size: 1em; /* Standard font size for paragraphs */
-    color: #17181a; /* Gray color for the text */
-    margin: 5px 0; /* Space above and below paragraphs */
-    font:serif;
+  .header2-subtitle {
+    font-size: 1em; /* Standard font size for the subtitle */
+    color: #cfcfd1; /* Gray color for the subtitle */
+    margin: 5px 0; /* Space above and below the subtitle */
+    position:relative;
+    bottom:700px;
+    right: 790px;
+  }
+  
+  .header2-platforms {
+    font-size: 1em; /* Standard font size for the platforms */
+    color: #6c757d; /* Gray color for the platforms */
+    margin: 5px 0; /* Space above and below the platforms */
+    position:relative;
+    bottom: 680px;
+    right: 830px;
+    margin-right: 20px;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  
+  .header2-created {
+    font-size: 1em; /* Standard font size for the created date */
+    color: #6c757d; /* Gray color for the created date */
+    margin: 5px 0; /* Space above and below the created date */
+    position:relative;
+    bottom: 750px;
+    left:800px;
+
+  }
+  
+  .header2-status {
+    font-size: 1em; /* Standard font size for the status */
+    color: #6c757d; /* Gray color for the status */
+    margin: 0px 0; /* Space above and below the status */
+    position: relative;
+    bottom: 775px;
+    left: 580px;
+  }
+
+  
+  .header2-active {
+    font-size: 14px; /* Standard font size for the status */
+    color: #90ce89; /* Gray color for the status */
+    margin: 5px 0; /* Space above and below the status */
+    background: rgba(78, 248, 200, 0.07); /* Light green background */
+    border-radius: 50px; /* Make the border radius oval */
+    border: 2px solid rgb(176, 179, 176); /* Add a green border */
+    padding: 5px 10px; /* Add some padding for better spacing */
+    display: inline-block; /* Ensure the element is inline-block */
+    position: relative;
+    bottom: 810px;
+    left: 645px;
   }

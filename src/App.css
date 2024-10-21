@@ -2,46 +2,40 @@
 
 .App {
   text-align: center;
-  width: 100%; /* Set the width to 100% of the parent container */
-  width: 1000px; /* Set a maximum width for the container */
+  width: 2500px; /* Set the width to 100% of the parent container */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add some padding for better spacing */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  position: absolute;
-  color: white;
+  /*box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-sidebar {
+  /* Add styles specific to Sidebar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-header1 {
+  /* Add styles specific to Header1 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+.App-header2 {
+  /* Add styles specific to Header2 */
 }
 
-.App-link {
-  color: #61dafb;
+.App-dashboard {
+  /* Add styles specific to Dashboard */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-influencers {
+  /* Add styles specific to InfluencersSection */
+}
+
+.App-campaign-reach {
+  /* Add styles specific to CampaignReach */
+}
+
+.App-radar-chart {
+  /* Add styles specific to RadarChartComponent */
+}
+
+.App-age-gender-chart {
+  /* Add styles specific to AgeGenderChart */
 }

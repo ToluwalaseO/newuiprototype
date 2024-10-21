@@ -3,15 +3,22 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+   
 }
 
 .card {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    width: 200px;
+    height: 150px;
+    /*position: relative;
+    bottom: 780px;
+    left: 520px; */
 }
+
 
 .icon {
     font-size: 30px;
