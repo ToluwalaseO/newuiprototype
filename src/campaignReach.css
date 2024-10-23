@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ffffff;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
 }
 
 .map {
@@ -18,7 +18,7 @@
 .map-placeholder {
     width: 60%;
     height: 300px; /* Adjust based on your needs */
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     justify-content: center;

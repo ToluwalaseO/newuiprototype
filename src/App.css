@@ -2,10 +2,14 @@
 
 .App {
   text-align: center;
-  width: 2500px; /* Set the width to 100% of the parent container */
+  
+  width: 3500px; /* Set the width to 100% of the parent container */
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add some padding for better spacing */
   /*box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background-color: grey;
+  height: 1000px;
+
 }
 
 .App-sidebar {
