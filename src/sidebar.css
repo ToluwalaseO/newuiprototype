@@ -1,51 +1,110 @@
+/* Sidebar.css */
+
 .sidebar {
-    padding: 20px;
-    background-color: #ffffff;
-    position: relative;
-    top: 50px;
-    
-  
-  }
-  
+  padding: 20px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 100px;
+  width: 183px;
+  right: 20px;
+  height: 1000px;
+  border-radius: 5px;
+}
+.profile{
+  font-size: 12px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  bottom: 80px;
+  margin-bottom: 30px;
+  margin-right: 3px;
+  position: relative;
+}
 
+ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
 
-  .sidebar-search {
-    width: 10%;
-    max-width: 200px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 500px;
-    border: 3px solid #ffffff;
-    right:8px;
-    position: relative;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  ul li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  ul li i {
-    margin-right: 10px;
-  }
-  
-  ul li:hover {
-    cursor: pointer;
-    background-color: #eaeaea;
-  }
-  
-  .sidebar-search {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
+ul li:hover {
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+
+.sidebar-search {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #e8e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+  top: 40px;
+  position: relative;
+  right: 3px;
+}
+
+.email {
+  position: relative;
+  right: 11px;
+  bottom: 55px;
+  font-size: 10px;
+}
+
+.icon {
+  position: relative;
+  right: 76px;
+  bottom: 120px;
+  font-size: 35px;
+}
+
+.icon2 {
+  position: relative;
+  right: 100px;
+  bottom: 1000px;
+  font-size: 35px;
+}
+
+.name1 {
+  position: relative;
+  bottom: 87px;
+  left: 6px;
+}
+
+.axis {
+  position: relative;
+  bottom: 150px;
+  left: 85px;
+  font-size: 19px;
+}
+
+.upgrade-section {
+  background-color: #007bff;
+  padding: 15px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin-top: auto;
+  position: relative;
+  bottom: 50px;
+}
+
+.upgrade-section h4 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+
+.upgrade-section p {
+  font-size: 12px;
+  margin: 0 0 15px;
+}
+
+.upgrade-button {
+  padding: 10px 20px;
+  background-color: #0056b3;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}

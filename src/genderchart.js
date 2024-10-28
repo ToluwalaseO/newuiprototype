@@ -1,56 +1,56 @@
-import React from 'react';
-import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
-import { Bar } from 'react-chartjs-2';
-import './AgeGenderChart.css'; // Import the CSS file
+// AudienceAgeGenderChart.js
+import React from "react";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  CartesianGrid,
+  LabelList,
+} from "recharts";
+import "./genderchart.css"; // Import the CSS file
 
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+const data = [
+  { age: "15-24", male: 75000, female: 25000 },
+  { age: "25-34", male: 100000, female: 75000 },
+  { age: "35-44", male: 50000, female: 50000 },
+  { age: "45-54", male: 25000, female: 10000 },
+  { age: "55-64", male: 10000, female: 5000 },
+  { age: "65+", male: 5000, female: 2000 },
+];
 
-const AgeGenderChart = () => {
-    const data = {
-        labels: ['15-24', '25-34', '35-44', '45-54', '55-64', '64+'],
-        datasets: [
-            {
-                label: 'Male',
-                backgroundColor: 'rgba(54, 162, 235, 0.7)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1,
-                data: [-75, -90, -50, -30, -20, -10]
-            },
-            {
-                label: 'Female',
-                backgroundColor: 'rgba(75, 192, 192, 0.7)',
-                borderColor: 'rgba(75, 192, 192, 1)',
-                borderWidth: 1,
-                data: [65, 85, 45, 25, 15, 5]
-            }
-        ]
-    };
-
-    const options = {
-        indexAxis: 'y',
-        scales: {
-            x: {
-                ticks: {
-                    callback: function (value) {
-                        return Math.abs(value);
-                    }
-                }
-            }
-        },
-        plugins: {
-            legend: {
-                position: 'top'
-            }
-        },
-        responsive: true,
-    };
-
-    return (
-        <div className="chart-container">
-            <h2 className="chart-title">Audience Age & Gender</h2>
-            <Bar data={data} options={options} />
-        </div>
-    );
+const AudienceAgeGenderChart = () => {
+  return (
+    <div className="chart-container">
+      <h4 className="chart-title">Audience Age & Gender</h4>
+      <ResponsiveContainer width="100%" height="100%">
+        <BarChart
+          data={data}
+          layout="vertical"
+          margin={{ top: 20, right: 20, left: 20, bottom: 20 }}
+          barSize={10}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis
+            type="number"
+            domain={[0, 100000]}
+            tickFormatter={(value) => `${value / 1000}k`}
+          />
+          <YAxis type="category" dataKey="age" />
+          <Tooltip formatter={(value) => `${value.toLocaleString()}`} />
+          
+          <Bar dataKey="male" fill="#007bff" radius={[0, 10, 10, 0]}>
+            <LabelList dataKey="male" position="insideRight" fill="#ffffff" />
+          </Bar>
+          <Bar dataKey="female" fill="#28a745" radius={[10, 0, 0, 10]}>
+            <LabelList dataKey="female" position="insideLeft" fill="#ffffff" />
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
 };
 
-export default AgeGenderChart;
+export default AudienceAgeGenderChart;

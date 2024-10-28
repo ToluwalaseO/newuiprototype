@@ -1,11 +1,24 @@
-.radar-chart-container {
-    margin-left: 200px; /* Use margin to position the chart */
-    width: 500px; /* Set the width of the radar chart container */
-    height: 400px; /* Set the height of the radar chart container */
-}
 
-.radar-chart-header {
-    text-align: left; /* Align the header text to the left */
-    font-size: 24px; /* Font size for the header */
-    margin-bottom: 20px; /* Space between header and chart */
-}
+
+.radar-chart-container {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 18px;
+    position: relative;
+    bottom:1635px;
+    left:1640px;
+  }
+  
+  .chart-title {
+    text-align: left;
+    position: relative;
+    right: 120px;
+    bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .recharts-surface {
+    background: transparent; /* Ensure the chart has a transparent background */
+  }

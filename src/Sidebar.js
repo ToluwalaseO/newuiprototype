@@ -1,46 +1,50 @@
-import React, { useState } from 'react';
-import './sidebar.css'; // Ensure you have the relevant styles
+// Sidebar.js
+import React, { useState } from "react";
+import "./sidebar.css";
 
 const Sidebar = () => {
-  const [searchTerm, setSearchTerm] = useState(''); // State to handle the search input
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
-  const menuItems = [
-    { icon: "fa-solid fa-square", label: "Home" },
-    { icon: "fa-solid fa-angles-right", label: "Campaign" },
-    { icon: "fa-solid fa-building-columns", label: "Payments", color: '#2357d1' },
-    { icon: "fa-solid fa-link", label: "Influencer" },
-    { icon: "fa-regular fa-square-check", label: "Settings" },
-    { icon: "fa-regular fa-square-check", label: "Connected Service" },
-    { icon: "fa-regular fa-square-check", label: "Password & Security" },
-    { icon: "fa-solid fa-arrows-up-down-left-right", label: "Team" },
-    { icon: "fa-solid fa-user", label: "Campaign" },
-    { icon: "fa-solid fa-users", label: "Payments" },
-    { icon: "fa-solid fa-users", label: "Influencer" },
-  ];
-
-  // Filter items based on the search term
-  const filteredItems = menuItems.filter(item =>
-    item.label.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const toggleSettings = () => {
+    setSettingsOpen(!settingsOpen);
+  };
 
   return (
     <div className="sidebar">
-      {/* Search Bar */}
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        className="sidebar-search"
-      />
+      <div className="profile">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Profile" className="icon" />
+        <div className="name1">
+          <h4>Justinus Lhaksana</h4>
+          <p className="email">justinusl@mail.com</p>
+        </div>
+      </div>
+
+      <input type="text" placeholder="Search..." className="sidebar-search" />
 
       <ul>
-        {filteredItems.map((item, index) => (
-          <li key={index} style={{ color: item.color || 'inherit' }}>
-            <i className={item.icon} style={{ color: item.color || 'inherit' }}></i> {item.label}
-          </li>
-        ))}
+        <li><i className="axis">🏠</i> Home</li>
+        <li><i className="axis">📊</i> Campaign</li>
+        <li><i className="axis">💳</i> Payments</li>
+        <li><i className="axis">🤝</i> Influencer</li>
+
+        <li onClick={toggleSettings}>
+          <i className="axis">⚙️</i> Settings
+          {settingsOpen && (
+            <ul>
+              <li><i className="icon2">🔗</i> Connected Service</li>
+              <li><i className="icon2">🔒</i> Password & Security</li>
+            </ul>
+          )}
+        </li>
+
+        <li><i className="axis">👥</i> Team</li>
       </ul>
+
+      <div className="upgrade-section">
+        <h4>Become Pro Access</h4>
+        <p>Try your experience for using more features</p>
+        <button className="upgrade-button">Upgrade Pro</button>
+      </div>
     </div>
   );
 };

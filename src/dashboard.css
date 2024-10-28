@@ -1,5 +1,5 @@
 .dashboard {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 20px;
@@ -8,19 +8,64 @@
 
 .card {
     background-color: rgb(255, 255, 255);
-    border-radius: 6px;
+    border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 200px;
-    height: 150px;
+    width: 220px;
+    height: 180px;
     position: relative;
-    bottom: 780px;
-    left: 280px; 
+    bottom: 1040px;
+    left: 225px; 
+    gap:50px;
+}
+
+.card2 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    height: 180px;
+    position: relative;
+    bottom: 1039px;
+    left: 267px; 
+    gap:50px;
+}
+
+.card3 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    height: 180px;
+    position: relative;
+    bottom: 795px;
+    right: 302px; 
+    gap:50px;
+}
+
+.card4{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 220px;
+    height: 180px;
+    position: relative;
+    bottom: 793px;
+    right: 258px; 
+    
+    
 }
 
 
-.icon {
+
+.icon9 {
     font-size: 30px;
     display: block;
     margin-bottom: 10px;

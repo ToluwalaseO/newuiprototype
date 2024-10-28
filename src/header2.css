@@ -1,29 +1,35 @@
 /* header2.css */
 
 .header2 {
-    background-color: #f8f9fa; /* Light background color */
+    background-color: #ffffff; /* Light background color */
     padding: 20px; /* Add some padding */
-    radius: 8px; /* Rounded corners */
+    border-radius: opx; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center-align text */
+    position: relative;
+    bottom:1061px;
+    left: 198px;
+    height: 100px;
+    width:3282px;
   }
   
   .header2-title {
-    font-size: 2em; /* Larger font size for the main heading */
+    font-size: 10; /* Larger font size for the main heading */
     color: #000000; /* Darker color for the main heading */
     margin-bottom: 10px; /* Space below the heading */
-    bottom: 700px;
-    right: 800px;
+    bottom: 25px;
+    right: 1460px;
     position: relative;
+
   }
   
   .header2-subtitle {
     font-size: 1em; /* Standard font size for the subtitle */
-    color: #cfcfd1; /* Gray color for the subtitle */
+    color: #969696; /* Gray color for the subtitle */
     margin: 5px 0; /* Space above and below the subtitle */
     position:relative;
-    bottom:700px;
-    right: 790px;
+    bottom:30px;
+    right: 1458px;
   }
   
   .header2-platforms {
@@ -36,38 +42,89 @@
     margin-right: 20px;
     justify-content: space-between;
     margin-right: 20px;
+    position: relative;
+    bottom: 30px;
+    right:1570px;
+    margin-bottom: 20px;
+  
+    }
+  
+  .header2-campaign{
+    position: relative;
+    bottom: 130px;
+    right: 1427px;
   }
   
+
   .header2-created {
     font-size: 1em; /* Standard font size for the created date */
     color: #6c757d; /* Gray color for the created date */
     margin: 5px 0; /* Space above and below the created date */
     position:relative;
-    bottom: 750px;
-    left:800px;
+    bottom: 80px;
+    left:1390px;
 
   }
   
+  .header2-date {
+    font-size: 1em; /* Standard font size for the created date */
+    color: #6c757d; /* Gray color for the created date */
+    margin: 5px 0; /* Space above and below the created date */
+    position:relative;
+    bottom: 106px;
+    left:1500px;
+    font-weight: bold;
+
+  }
   .header2-status {
     font-size: 1em; /* Standard font size for the status */
     color: #6c757d; /* Gray color for the status */
     margin: 0px 0; /* Space above and below the status */
     position: relative;
-    bottom: 775px;
-    left: 580px;
+    bottom: 132px;
+    left: 1230px;
   }
 
   
   .header2-active {
-    font-size: 14px; /* Standard font size for the status */
-    color: #90ce89; /* Gray color for the status */
+    font-size: 12px; /* Standard font size for the status */
+    color: #33b724; /* Gray color for the status */
     margin: 5px 0; /* Space above and below the status */
-    background: rgba(78, 248, 200, 0.07); /* Light green background */
-    border-radius: 50px; /* Make the border radius oval */
-    border: 2px solid rgb(176, 179, 176); /* Add a green border */
+    background: rgba(152, 230, 129, 0.976); /* Light green background */
+    border-radius: 10px; /* Make the border radius oval */
+    border: 0.5px solid rgb(136, 196, 136); /* Add a green border */
     padding: 5px 10px; /* Add some padding for better spacing */
     display: inline-block; /* Ensure the element is inline-block */
     position: relative;
-    bottom: 810px;
-    left: 645px;
+    bottom: 163px;
+    left: 1292px;
+    font-weight: bold;
+  }
+
+  .tiktok{
+    font-size: 15px;
+    font-style: underline;
+    left:20px;
+    top: 13px;
+    position: relative;
+    border-bottom:2px solid #000000;
+    border-radius: 1px;
+    display: inline-block;
+  }
+
+  .instagram{
+    font-size: 15px;
+    position: relative;
+    bottom: 38px;
+    left:170px;
+    font-weight: normal;
+  }
+
+  .facebook{
+    font-size: 15px;
+    position: relative;
+    bottom:70px;
+    left: 320px;
+    font-weight: normal;
+
   }

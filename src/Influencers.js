@@ -1,32 +1,45 @@
-import React from 'react';
-import './influencers.css'; // Ensure the correct path to your CSS file
+// InfluencerTable.js
+import React from "react";
+import "./influencers.css";
 
-const Influencers= () => {
-  const influencers = [
-    { name: 'Malik Wiwoho', projects: 23 ,followers: '1,620,201'},
-    { name: 'Nancy Aulia',projects: 34 , followers: '1,224,820'},
-    { name: 'Natasha Viresta',projects: 12 , followers: '1,100,491' },
-    { name: 'Wilona Hamda', projects: 8, followers: '927,421' },
-    { name: 'Rava Nanda',projects: 10, followers: '827,810' },
-  ];
+const influencers = [
+  { name: "Malik Wiwoho", projects: 23, followers: "1,620,201" },
+  { name: "Nancy Aulia", projects: 34, followers: "1,224,820" },
+  { name: "Natasha Viresta", projects: 12, followers: "1,100,491" },
+  { name: "Wilona Hamda", projects: 8, followers: "927,421" },
+  { name: "Rava Nanda", projects: 10, followers: "827,810" },
+];
 
+const InfluencerTable = () => {
   return (
-    <div className="influencers-section">
-      <h3>Influencers</h3>
+    <div className="table-container">
       <div className="table-header">
-        <div className="table-cell"><strong>Influencer Name</strong></div>
-        <div className="table-cell"><strong>Projects</strong></div>
-        <div className="table-cell"><strong>Followers</strong></div>
+        <h2>Influencer</h2>
+        <button className="add-button">+ Add Influencer</button>
       </div>
-      {influencers.map((influencer, index) => (
-        <div className="table-row" key={index}>
-          <div className="table-cell">{influencer.name}</div>
-          <div className="table-cell">{influencer.followers}</div>
-          <div className="table-cell">{influencer.projects}</div>
-        </div>
-      ))}
+      <table className="influencer-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Projects</th>
+            <th>Follower</th>
+          </tr>
+        </thead>
+        <tbody>
+          {influencers.map((influencer, index) => (
+            <tr key={index}>
+              <td className="name-column">
+                <img src={`https://i.pravatar.cc/150?img=${index + 1}`} alt="avatar" className="avatar" />
+                {influencer.name}
+              </td>
+              <td>{influencer.projects}</td>
+              <td>{influencer.followers}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };
 
-export default Influencers;
+export default InfluencerTable;

@@ -1,0 +1,20 @@
+
+.chart-container {
+    width: 30%;
+    height: 410px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    position:relative;
+    bottom:2165px;
+    left:843px;
+
+  }
+  
+  .chart-title {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  

@@ -1,44 +1,66 @@
-import React from 'react';
-import { Chart as ChartJS, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend } from 'chart.js';
-import { Radar } from 'react-chartjs-2';
-import './RadarChart.css'; // Import the CSS file
+// FollowerInterestRadarChart.js
+import React from "react";
+import {
+  Radar,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import "./RadarChart.css"; // Import the CSS file
 
-ChartJS.register(RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend);
+const data = [
+  { subject: "Fashion", Tiktok: 90, Twitter: 60, Facebook: 75 },
+  { subject: "Cosmetics", Tiktok: 80, Twitter: 70, Facebook: 60 },
+  { subject: "Watches", Tiktok: 70, Twitter: 65, Facebook: 50 },
+  { subject: "Others", Tiktok: 60, Twitter: 70, Facebook: 55 },
+  { subject: "Memes", Tiktok: 50, Twitter: 40, Facebook: 45 },
+  { subject: "Cars", Tiktok: 65, Twitter: 80, Facebook: 70 },
+  { subject: "Technology", Tiktok: 85, Twitter: 75, Facebook: 80 },
+];
 
-const FollowerInterestChart = () => {
-    const data = {
-        labels: ['Interest 1', 'Interest 2', 'Interest 3', 'Interest 4', 'Interest 5'],
-        datasets: [
-            {
-                label: 'Followers',
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 2,
-                data: [20, 30, 40, 50, 60], // Sample data values
-            }
-        ]
-    };
-
-    const options = {
-        responsive: true,
-        scale: {
-            ticks: {
-                beginAtZero: true,
-            }
-        },
-        plugins: {
-            legend: {
-                position: 'top',
-            }
-        },
-    };
-
-    return (
-        <div className="radar-chart-container">
-            <h2 className="radar-chart-header">Follower Interest</h2>
-            <Radar data={data} options={options} />
-        </div>
-    );
+const renderLineLegend = (value, entry) => {
+  const { color } = entry;
+  return (
+    <span style={{ display: 'flex', alignItems: 'center' }}>
+      <span
+        style={{
+          width: '24px', // Length of the line
+          height: '2px', // Thickness of the line
+          backgroundColor: color,
+          display: 'inline-block',
+          marginRight: '8px',
+        }}
+      ></span>
+      {value}
+    </span>
+  );
 };
 
-export default FollowerInterestChart;
+const FollowerInterestRadarChart = () => {
+  return (
+    <div className="radar-chart-container">
+      <h4 className="chart-title">Follower Interest</h4>
+      <ResponsiveContainer width="100%" height={450}>
+        <RadarChart data={data}>
+          <PolarGrid />
+          <PolarAngleAxis dataKey="subject" />
+          <PolarRadiusAxis angle={30} domain={[0, 100]} />
+          <Radar name="Tiktok" dataKey="Tiktok" stroke="#fbc02d" fill="#fbc02d" fillOpacity={0.6} />
+          <Radar name="Twitter" dataKey="Twitter" stroke="#66bb6a" fill="#66bb6a" fillOpacity={0.6} />
+          <Radar name="Facebook" dataKey="Facebook" stroke="#1e88e5" fill="#1e88e5" fillOpacity={0.6} />
+          <Legend
+            verticalAlign="bottom"
+            align="center"
+            layout="horizontal"
+            formatter={renderLineLegend} // Use custom formatter
+          />
+        </RadarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+};
+
+export default FollowerInterestRadarChart;

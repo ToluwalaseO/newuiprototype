@@ -1,0 +1,75 @@
+/* InfluencerTable.css */
+
+.table-container {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position:relative;
+    bottom: 1200px;
+    right: 718px;
+
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 50px;
+  }
+  
+  .table-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    
+  }
+  
+  .add-button {
+    font-size: 14px;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .influencer-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .influencer-table th{
+    padding: 12px 8px;
+    text-align: left;
+    background-color: grey;
+  }
+  .influencer-table td {
+    padding: 12px 8px;
+    text-align: left;
+  }
+  
+  .influencer-table th {
+    font-weight: 500;
+    color: #6c757d;
+  }
+  
+  .name-column {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .influencer-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
