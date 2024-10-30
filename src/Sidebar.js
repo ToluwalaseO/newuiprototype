@@ -5,9 +5,7 @@ import "./sidebar.css";
 const Sidebar = () => {
   const [settingsOpen, setSettingsOpen] = useState(false);
 
-  const toggleSettings = () => {
-    setSettingsOpen(!settingsOpen);
-  };
+  const toggleSettings = () => setSettingsOpen(!settingsOpen);
 
   return (
     <div className="sidebar">
@@ -21,16 +19,16 @@ const Sidebar = () => {
 
       <input type="text" placeholder="Search..." className="sidebar-search" />
 
-      <ul>
+      <ul className="menu">
         <li><i className="axis">🏠</i> Home</li>
         <li><i className="axis">📊</i> Campaign</li>
         <li><i className="axis">💳</i> Payments</li>
         <li><i className="axis">🤝</i> Influencer</li>
 
-        <li onClick={toggleSettings}>
+        <li className="settings" onClick={toggleSettings}>
           <i className="axis">⚙️</i> Settings
           {settingsOpen && (
-            <ul>
+            <ul className="settings-dropdown">
               <li><i className="icon2">🔗</i> Connected Service</li>
               <li><i className="icon2">🔒</i> Password & Security</li>
             </ul>

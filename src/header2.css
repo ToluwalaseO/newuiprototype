@@ -3,22 +3,22 @@
 .header2 {
     background-color: #ffffff; /* Light background color */
     padding: 20px; /* Add some padding */
-    border-radius: opx; /* Rounded corners */
+    border-radius: 0px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Center-align text */
     position: relative;
-    bottom:1061px;
-    left: 198px;
+    bottom:1056px;
+    left: 206px;
     height: 100px;
-    width:3282px;
+    width:117.5%;
   }
   
   .header2-title {
-    font-size: 10; /* Larger font size for the main heading */
+    font-size: 27px; /* Larger font size for the main heading */
     color: #000000; /* Darker color for the main heading */
     margin-bottom: 10px; /* Space below the heading */
-    bottom: 25px;
-    right: 1460px;
+    bottom: 20px;
+    right: 660px;
     position: relative;
 
   }
@@ -29,7 +29,7 @@
     margin: 5px 0; /* Space above and below the subtitle */
     position:relative;
     bottom:30px;
-    right: 1458px;
+    right: 628px;
   }
   
   .header2-platforms {
@@ -52,7 +52,7 @@
   .header2-campaign{
     position: relative;
     bottom: 130px;
-    right: 1427px;
+    right: 840px;
   }
   
 
@@ -104,7 +104,7 @@
   .tiktok{
     font-size: 15px;
     font-style: underline;
-    left:20px;
+    left:320px;
     top: 13px;
     position: relative;
     border-bottom:2px solid #000000;
@@ -123,8 +123,16 @@
   .facebook{
     font-size: 15px;
     position: relative;
-    bottom:70px;
+    bottom:0px;
     left: 320px;
     font-weight: normal;
 
   }
+
+  .logored {
+    position: absolute; /* Ensure it is positioned relative to the nearest positioned ancestor */
+    bottom:30px;
+    left: 50px;
+    font-size: 45px; /* Adjust the size as needed */
+    color: #f32b3f; /* Ensure the color is applied */
+}

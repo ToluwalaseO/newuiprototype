@@ -1,110 +1,140 @@
-/* Sidebar.css */
+/* sidebar.css */
 
 .sidebar {
-  padding: 20px;
+  width: 200px;
   background-color: #ffffff;
+  color: #ecf0f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
   position: relative;
-  bottom: 100px;
-  width: 183px;
-  right: 20px;
-  height: 1000px;
-  border-radius: 5px;
+  right:45px;
+  bottom: 110px;
+  border-radius: 8px;
+
+
+  
 }
-.profile{
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.name1 h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  display:flex;
+  
+}
+
+.email {  
   font-size: 12px;
+  color: #bdc3c7;
 }
-ul {
+
+.sidebar-search {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border-radius: 4px;
+  border: none;
+  background-color: #ffffff;
+  color: #ecf0f1;
+  font-size: 14px;
+}
+
+.menu {
   list-style-type: none;
   padding: 0;
-  bottom: 80px;
-  margin-bottom: 30px;
-  margin-right: 3px;
+}
+
+.menu li {
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu li:hover {
+  background-color: #34495e;
+}
+
+.axis {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.settings {
   position: relative;
 }
 
-ul li {
-  padding: 10px 0;
+.settings-dropdown {
+  list-style-type: none;
+  padding: 5px 0;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+}
+
+.settings-dropdown li {
+  padding: 8px 15px;
+  font-size: 14px;
   display: flex;
   align-items: center;
 }
 
-ul li:hover {
-  cursor: pointer;
-  background-color: #eaeaea;
-}
-
-.sidebar-search {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #e8e5e5;
-  border-radius: 10px;
-  font-size: 14px;
-  top: 40px;
-  position: relative;
-  right: 3px;
-}
-
-.email {
-  position: relative;
-  right: 11px;
-  bottom: 55px;
-  font-size: 10px;
-}
-
-.icon {
-  position: relative;
-  right: 76px;
-  bottom: 120px;
-  font-size: 35px;
-}
-
 .icon2 {
-  position: relative;
-  right: 100px;
-  bottom: 1000px;
-  font-size: 35px;
-}
-
-.name1 {
-  position: relative;
-  bottom: 87px;
-  left: 6px;
-}
-
-.axis {
-  position: relative;
-  bottom: 150px;
-  left: 85px;
-  font-size: 19px;
+  margin-right: 8px;
+  font-size: 16px;
 }
 
 .upgrade-section {
-  background-color: #007bff;
+  margin-top: auto;
+  text-align: center;
+  background-color: #16a085;
   padding: 15px;
   border-radius: 8px;
-  color: white;
-  text-align: center;
-  margin-top: auto;
-  position: relative;
-  bottom: 50px;
+  color: #ecf0f1;
 }
 
 .upgrade-section h4 {
-  font-size: 16px;
-  margin: 0 0 8px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .upgrade-section p {
   font-size: 12px;
-  margin: 0 0 15px;
+  margin: 5px 0;
 }
 
 .upgrade-button {
-  padding: 10px 20px;
-  background-color: #0056b3;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #2c3e50;
+  background-color: #ecf0f1;
   border: none;
-  color: white;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+.upgrade-button:hover {
+  background-color: #bdc3c7;
 }
