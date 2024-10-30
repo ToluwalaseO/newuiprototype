@@ -54,7 +54,7 @@
      /* Optional, transforms text to uppercase */
     /* Adds space between name and name2 */
     position: relative;
-    left: 300px;
+    left: 261px;
   }
   
   /* Style for the second name (Brand) */
@@ -62,13 +62,13 @@
     font-size: 15px;
     color: #a0a2a1;
     top:24px;
-    right:50px;
+    right:90px;
     position: relative;
   }
 
   .icon1{
     position: relative;
-    left: 1140px;
+    left: 1100px;
     top: 5px;
     font-size: 45px;
 

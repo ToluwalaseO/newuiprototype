@@ -1,12 +1,13 @@
 
 .radar-chart-container {
-    width: 100%;
+    width: 34%;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 18px;
     position: relative;
-    bottom:1635px;
-    left:980px;
+    bottom:1615px;
+    left:1425px;
+    border-color: rgb(208, 207, 207);
   
   }
   
