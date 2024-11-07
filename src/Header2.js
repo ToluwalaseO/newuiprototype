@@ -9,9 +9,15 @@ const Header2 = () => {
             <h1 className="header2-title">Blue Chips Chicago</h1>
             <p className="header2-subtitle">Diam nullam quis nunc at pretium augue</p>
             <div className="header2-platforms">
-                <p className='tiktok'>Tiktok</p>
-                <p className='instagram'>Instagram</p>
-                <p className='facebook'>Facebook</p>
+                <div className="header2-tiktok">
+                    <p>Tiktok</p>
+                </div>
+                <div className="header2-instagram">
+                    <p>Instagram</p>
+                </div>
+                <div className="header2-facebook">
+                    <p>Facebook</p>
+                </div>
             </div>
             <div className="header2-campaign">
                 <p className="header2-created">Created on</p>

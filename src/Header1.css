@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1800px;
+    width: 1350px;
     height: 80px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@
      /* Optional, transforms text to uppercase */
     /* Adds space between name and name2 */
     position: relative;
-    left: 261px;
+    left: 160px;
   }
   
   /* Style for the second name (Brand) */
@@ -62,26 +62,26 @@
     font-size: 15px;
     color: #a0a2a1;
     top:24px;
-    right:90px;
+    right:97px;
     position: relative;
   }
 
   .icon1{
     position: relative;
-    left: 1100px;
+    left: 730px;
     top: 5px;
     font-size: 45px;
 
   }
   .icon2{
     position: relative;
-    left: 735px;
+    left: 455px;
     font-size: 25px;
     top:10px;
   }
 
   .icon3{
     position: relative;
-    left:452px;
+    left:256px;
     font-size: 8px;
   }

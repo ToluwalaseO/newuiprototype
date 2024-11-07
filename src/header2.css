@@ -10,7 +10,7 @@
     bottom:930px;
     left: 206px;
     height: 100px;
-    width:117.5%;
+    width:88%;
   }
   
   .header2-title {
@@ -18,7 +18,7 @@
     color: #000000; /* Darker color for the main heading */
     margin-bottom: 10px; /* Space below the heading */
     bottom: 20px;
-    right: 660px;
+    right: 440px;
     position: relative;
 
   }
@@ -29,30 +29,28 @@
     margin: 5px 0; /* Space above and below the subtitle */
     position:relative;
     bottom:30px;
-    right: 628px;
+    right: 408px;
   }
   
   .header2-platforms {
-    font-size: 1em; /* Standard font size for the platforms */
+     /* Standard font size for the platforms */
     color: #6c757d; /* Gray color for the platforms */
     margin: 5px 0; /* Space above and below the platforms */
-    position:relative;
-    bottom: 680px;
-    right: 830px;
-    margin-right: 20px;
     justify-content: space-between;
-    margin-right: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
     position: relative;
     bottom: 30px;
-    right:1570px;
-    margin-bottom: 20px;
+    left:60px;
+    font-size: 9px;
   
     }
   
   .header2-campaign{
     position: relative;
-    bottom: 130px;
-    right: 840px;
+    bottom: 70px;
+    right: 950px;
   }
   
 
@@ -88,9 +86,9 @@
   
   .header2-active {
     font-size: 12px; /* Standard font size for the status */
-    color: #33b724; /* Gray color for the status */
+    color: #cbeec7; /* Gray color for the status */
     margin: 5px 0; /* Space above and below the status */
-    background: rgba(152, 230, 129, 0.976); /* Light green background */
+    background: rgba(99, 243, 59, 0.976); /* Light green background */
     border-radius: 10px; /* Make the border radius oval */
     border: 0.5px solid rgb(136, 196, 136); /* Add a green border */
     padding: 5px 10px; /* Add some padding for better spacing */
@@ -101,38 +99,24 @@
     font-weight: bold;
   }
 
-  .tiktok{
-    font-size: 15px;
-    font-style: underline;
-    left:320px;
-    top: 13px;
-    position: relative;
-    border-bottom:2px solid #000000;
-    border-radius: 1px;
-    display: inline-block;
-  }
+  .header2-tiktok {
+    color: #69C9D0; /* TikTok color */
+    font-weight: bold; /* Keep TikTok bold */
+    border-bottom: 2px solid #000000; /* Underline TikTok */
+    font-size: 10px;
+}
 
-  .instagram{
-    font-size: 15px;
-    position: relative;
-    bottom: 38px;
-    left:170px;
-    font-weight: normal;
-  }
+.header2-instagram {
+    color: #E1306C; /* Instagram color */
+    font-weight: normal; /* Unbold Instagram */
+}
 
-  .facebook{
-    font-size: 15px;
-    position: relative;
-    bottom:0px;
-    left: 320px;
-    font-weight: normal;
+.header2-facebook {
+    color: #3b5998; /* Facebook color */
+    font-weight: normal; /* Unbold Facebook */
+}
 
-  }
+.logored{
+  bottom:60px;
 
-  .logored {
-    position: absolute; /* Ensure it is positioned relative to the nearest positioned ancestor */
-    bottom:30px;
-    left: 50px;
-    font-size: 45px; /* Adjust the size as needed */
-    color: #f32b3f; /* Ensure the color is applied */
 }

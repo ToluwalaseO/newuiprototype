@@ -1,12 +1,12 @@
 
 .radar-chart-container {
-    width: 34%;
+    width: 30%;
     background-color: #ffffff;
     padding: 15px;
     border-radius: 18px;
     position: relative;
-    bottom:1615px;
-    left:1425px;
+    bottom:1485px;
+    left:1245px;
     border-color: rgb(208, 207, 207);
   
   }
@@ -14,7 +14,7 @@
   .chart-title {
     text-align: left;
     position: relative;
-    right: 120px;
+    right: 100px;
     bottom: 20px;
     color: #333;
     font-weight: 600;

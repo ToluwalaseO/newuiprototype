@@ -14,8 +14,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 220px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     position: relative;
     bottom: 1040px;
     left: 225px; 
@@ -28,8 +28,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 220px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     position: relative;
     bottom: 1039px;
     left: 240px; 
@@ -42,11 +42,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 220px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     position: relative;
-    bottom: 795px;
-    right: 305px; 
+    bottom: 840px;
+    right: 225px; 
     gap:50px;
 }
 
@@ -56,11 +56,11 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 220px;
-    height: 180px;
+    width: 180px;
+    height: 140px;
     position: relative;
-    bottom: 793px;
-    right: 290px; 
+    bottom: 850px;
+    right: 200px; 
     
     
 }
@@ -75,7 +75,9 @@
 
 h3 {
     margin: 10px 0;
+    position: relative;
     font-size: 18px;
+    top:20px;
     color: #333;
 }
 

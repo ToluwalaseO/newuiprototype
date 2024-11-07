@@ -1,16 +1,16 @@
 /* InfluencerTable.css */
 
 .table-container {
-    width: 100%;
-    max-width: 520px;
+    width: 40%;
+    max-width: 390px;
     margin: auto;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     position:relative;
-    bottom: 1160px;
-    right: 218px;
+    bottom: 1020px;
+    right: 290px;
 
   }
   
