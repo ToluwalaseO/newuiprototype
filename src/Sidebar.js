@@ -20,10 +20,10 @@ const Sidebar = () => {
       <input type="text" placeholder="Search..." className="sidebar-search" />
 
       <ul className="menu">
-        <li><i className="axis">🏠</i> Home</li>
-        <li><i className="axis">📊</i> Campaign</li>
-        <li><i className="axis">💳</i> Payments</li>
-        <li><i className="axis">🤝</i> Influencer</li>
+        <li className="menu-item home"><i className="axis">🏠</i> Home</li>
+        <li className="menu-item campaign"><i className="axis">📊</i> Campaign</li>
+        <li className="menu-item payments"><i className="axis">💳</i> Payments</li>
+        <li className="menu-item influencer"><i className="axis">🤝</i> Influencer</li>
 
         <li className="settings" onClick={toggleSettings}>
           <i className="axis">⚙️</i> Settings
@@ -35,7 +35,7 @@ const Sidebar = () => {
           )}
         </li>
 
-        <li><i className="axis">👥</i> Team</li>
+        <li className="menu-item team"><i className="axis">👥</i> Team</li>
       </ul>
 
       <div className="upgrade-section">

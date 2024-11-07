@@ -36,6 +36,7 @@
   font-size: 18px;
   font-weight: 600;
   display:flex;
+  color: #2c3e50;
   
 }
 
@@ -76,7 +77,20 @@
 .axis {
   margin-right: 10px;
   font-size: 18px;
+  color: black;
 }
+.menu-item.home {
+  color: #d1d7dbe1; /* Blue color for Home */
+}
+
+.menu-item.campaign {
+  color: #d1d7dbe1; /* Red color for Campaign */
+}
+
+.menu-item.payments {
+  color: #d1d7dbe1; /* Green color for Payments */
+}
+
 
 .settings {
   position: relative;
