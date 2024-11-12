@@ -1,10 +1,11 @@
 .dashboard {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
-    padding: 20px;
-    position: relative;
-    top:100px;
+    gap: 20px;
+    padding: 5px;
+    position: absolute;
+    left:250px;
+    top:240px;
    
 }
 
@@ -12,28 +13,28 @@
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     width: 180px;
     height: 140px;
-    position: relative;
+    /* position: relative;
     bottom: 1040px;
     left: 225px; 
-    gap:50px;
+    gap:50px; */
 }
 
 .card2 {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
     width: 180px;
     height: 140px;
-    position: relative;
+    /* position: relative;
     bottom: 1039px;
     left: 240px; 
-    gap:50px;
+    gap:50px; */
 }
 
 .card3 {

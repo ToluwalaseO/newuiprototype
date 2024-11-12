@@ -37,7 +37,7 @@
     color: #6c757d; /* Gray color for the platforms */
     margin: 5px 0; /* Space above and below the platforms */
     justify-content: space-between;
-    width: 400px;
+    width: 200px;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -49,7 +49,7 @@
   
   .header2-campaign{
     position: relative;
-    bottom: 70px;
+    bottom: 30px;
     right: 950px;
   }
   
@@ -86,9 +86,9 @@
   
   .header2-active {
     font-size: 12px; /* Standard font size for the status */
-    color: #cbeec7; /* Gray color for the status */
+    color: #00C48C; 
     margin: 5px 0; /* Space above and below the status */
-    background: rgba(99, 243, 59, 0.976); /* Light green background */
+    background: rgba(0, 196, 140, 0.07);
     border-radius: 10px; /* Make the border radius oval */
     border: 0.5px solid rgb(136, 196, 136); /* Add a green border */
     padding: 5px 10px; /* Add some padding for better spacing */
@@ -98,25 +98,49 @@
     left: 1292px;
     font-weight: bold;
   }
-
   .header2-tiktok {
     color: #69C9D0; /* TikTok color */
     font-weight: bold; /* Keep TikTok bold */
-    border-bottom: 2px solid #000000; /* Underline TikTok */
+    border-bottom: 2px solid #1358a6; /* Underline TikTok */
+    font-size: 10px;
+    height: 25px;
+    width: 40px;
+    position: relative;
+    top:20px;
+
+}
+  .header2-tiktok p {
+    color: #000000; /* TikTok color */
+    font-weight: bold; /* Keep TikTok bold */
     font-size: 10px;
 }
+.header2-text
+{
+  position: relative;
+  top: 17px;
+}
 
-.header2-instagram {
-    color: #E1306C; /* Instagram color */
+.header2-text p {
+    color: #000000; /* Instagram color */
     font-weight: normal; /* Unbold Instagram */
+    font-size: 12px;
 }
 
-.header2-facebook {
-    color: #3b5998; /* Facebook color */
-    font-weight: normal; /* Unbold Facebook */
-}
 
 .logored{
   bottom:60px;
+  left: 70px;
+  position: absolute;
+
+}
+.logoleft{
+  position: relative;
+  bottom:100px;
+  left: 20px;
+}
+
+.logoright{
+  position: relative;
+  
 
 }

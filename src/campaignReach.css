@@ -11,8 +11,8 @@
     width: 55%;
     height: 300px;
     position: relative;
-    bottom:1115px;
-    left: 730px;
+    bottom:915px;
+    left: 670px;
 }
 
 /* Styling for the map image */
@@ -20,4 +20,4 @@
     max-width: 100%;
     height: auto;
     border-radius: 10px; /* Rounded corners for the image */
-}
+}                                                                                                                                             

@@ -25,7 +25,7 @@ const AudienceAgeGenderChart = () => {
   return (
     <div className="chart-container">
       <h4 className="chart-title">Audience Age & Gender</h4>
-      <ResponsiveContainer width="100%" height="100%">
+      <ResponsiveContainer width="90%" height="90%">
         <BarChart
           data={data}
           layout="vertical"

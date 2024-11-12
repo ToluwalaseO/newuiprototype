@@ -1,13 +1,13 @@
 
 .chart-container {
-    width: 30%;
-    height: 410px;
+    width:350px ;
+    height: 350px;
     background-color: #ffffff;
     padding: 10px;
     border-radius: 20px;
     position:relative;
-    bottom:1990px;
-    left:720px;
+    bottom:1750px;
+    left:687px;
 
   }
   

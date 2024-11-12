@@ -43,7 +43,7 @@ const FollowerInterestRadarChart = () => {
   return (
     <div className="radar-chart-container">
       <h4 className="chart-title">Follower Interest</h4>
-      <ResponsiveContainer width="100%" height={450}>
+      <ResponsiveContainer width="85%" height ="85%">
         <RadarChart data={data}>
           <PolarGrid />
           <PolarAngleAxis dataKey="subject" />
